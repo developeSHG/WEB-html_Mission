@@ -91,6 +91,7 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -150,4 +151,16 @@ html {
 body {
 	font-family: 'Noto Sans KR', sans-serif;
 	box-sizing: border-box;
+}
+
+.wrap {
+	background-color: white;
+	width: 1020px;
+	margin: 0 auto;
+	margin-bottom: 48px;
+}
+
+.header {
+	margin-top: 100px;
+	margin-bottom: 56px;
 }
