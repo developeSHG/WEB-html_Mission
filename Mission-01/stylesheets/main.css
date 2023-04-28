@@ -1,12 +1,5 @@
 @charset "UTF-8";
-/* 공통 스타일 */ /* Theme 스타일 작성 */
-:root {
-  --color-blue-600: #0074E9;
-  --color-gray-500: #C4C4C4;
-  --color-gray-600: #AAA9A9;
-}
-
-/* Base 스타일 작성 */
+/* 공통 스타일 */ /* Theme 스타일 작성 */ /* Base 스타일 작성 */
 /*  */
 /* reset */
 /*  */
@@ -181,10 +174,11 @@ body {
 .area_discovery h2 span {
   margin-left: 10px;
   font-size: 16px;
-  color: var(--color-gray-600);
+  color: #AAA9A9;
 }
 .area_discovery .list li {
-  border: 1px solid var(--color-gray-500);
+  position: relative;
+  border: 1px solid #C4C4C4;
   display: flex;
   justify-content: center;
   float: left;
@@ -192,13 +186,16 @@ body {
   margin-left: 16px;
   width: 243px;
   height: 310px;
+  margin-top: 16px;
 }
 .area_discovery .list li:nth-child(1) {
   width: 502px;
   margin-left: 0px;
+  margin-top: 0px;
 }
 .area_discovery .list li:nth-child(2) {
   width: 502px;
+  margin-top: 0px;
 }
 .area_discovery .list li:nth-child(7) {
   width: 502px;
@@ -206,4 +203,49 @@ body {
 }
 .area_discovery .list li:nth-child(3) {
   margin-left: 0px;
+}
+.area_discovery .list li a {
+  display: block;
+}
+.area_discovery .list li a span {
+  display: block;
+  position: absolute;
+  bottom: 19px;
+  left: 19px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.2;
+  background-color: black;
+}
+.area_discovery .list li a::after {
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  left: 32px;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.area_discovery .list li:hover, .area_discovery .list li:focus {
+  border-color: #0074E9;
+}
+.area_discovery .list li:hover span, .area_discovery .list li:focus span {
+  background-color: #0074E9;
+  opacity: 1;
+  width: 99px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  transition: width 0.3s;
+  font-size: 12px;
+  font-family: "돋움";
+}
+.area_discovery .list li:hover span::before, .area_discovery .list li:focus span::before {
+  content: "구매하기 >";
+}
+.area_discovery .list li:hover a::after, .area_discovery .list li:focus a::after {
+  display: none;
 }
