@@ -560,7 +560,7 @@ button:disabled {
   cursor: not-allowed;
 }
 
-.screen-read {
+.sr-only {
   position: absolute;
   overflow: hidden;
   width: 1px;

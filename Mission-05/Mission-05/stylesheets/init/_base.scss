@@ -85,13 +85,13 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -106,45 +106,49 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 body {
-	background-color: white;
+  background-color: white;
 }
 
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
 
-*, *::before, *::after{
+
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -152,7 +156,7 @@ body {
   font: 1.6rem/1.15 var(--font-family);
 }
 
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
@@ -169,13 +173,6 @@ button:disabled {
   cursor: not-allowed;
 }
 
-.sr-only{
-  position: absolute;
-  overflow:hidden;
-  width:1px;
-  height:1px;
-  padding:0;
-  margin:-1px;
-  border:0;
-  clip:rect(0,0,0,0);
+figure {
+  margin: 0;
 }

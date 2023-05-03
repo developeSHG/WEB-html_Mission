@@ -11,30 +11,580 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="/stylesheets/main.css" />
+  <link rel="stylesheet" href="./stylesheets/main.css" />
   <script type="module" src="./js/main.js"></script>
 </head>
 
 <body>
-  <header class="header">
-    <!-- 헤더 영역 -->
-    <!-- 대제목의 경우 "Coupang"으로 미리 마크업되어 있습니다. -->
-    <h1 class="sr-only">Coupang</h1>
-    <div class="header__inner">
-      <!-- 카테고리 버튼은 .header__inner 영역 안에 마크업 해주세요. -->
+  <div class="container">
+    <header id="header">
+      <div class="header_bar">
+        <div class="common_inner">
+          <ul class="header_menu">
+            <li>
+              <ul>
+                <li><a href="#">쿠팡플레이</a></li>
+                <li><a href="#">제휴마케팅</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">고객센터</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--//header_bar-->
+      </div>
+      <div class="common_inner">
+        <div class="header_area">
+          <div class="header_category">
+            <button class="button--category">
+              <span>카테고리</span>
+            </button>
+          </div>
+          <nav class="navigation">
+            <h2 class="sr-only">전체 카테고리 보기</h2>
+            <div class="navigation__inner">
+              <ul class="navigation__list depth1">
+                <li>
+                  <a href="#" class="depth1_list" role="button">
+                    <i class="icon-clothes"></i>패션의류/잡화
+                  </a>
+                  <ul class="depth2">
+                    <li class="right_link">
+                      <a href="#"><img src="./assets/img_1.jpg" alt="이벤트바로가기" /></a>
+                    </li>
+                    <li>
+                      <a href="#" role="button">여성패션</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">의류</a>
+                        </li>
+                        <li>
+                          <a href="#">속옷/잠옷</a>
+                        </li>
+                        <li>
+                          <a href="#">신발</a>
+                        </li>
+                        <li>
+                          <a href="#">가방/잡화</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" role="button">남성패션</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">의류</a>
+                        </li>
+                        <li>
+                          <a href="#">속옷/잠옷</a>
+                        </li>
+                        <li>
+                          <a href="#">신발</a>
+                        </li>
+                        <li>
+                          <a href="#">가방/잡화</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" role="button">남녀 공용 의류</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">티셔츠</a>
+                        </li>
+                        <li>
+                          <a href="#">맨투맨/후드티</a>
+                        </li>
+                        <li>
+                          <a href="#">셔츠</a>
+                        </li>
+                        <li>
+                          <a href="#">바지</a>
+                        </li>
+                        <li>
+                          <a href="#">트레이닝복</a>
+                        </li>
+                        <li>
+                          <a href="#">후드집업/집업류</a>
+                        </li>
+                        <li>
+                          <a href="#">니트류/조끼</a>
+                        </li>
+                        <li>
+                          <a href="#">아우터</a>
+                        </li>
+                        <li>
+                          <a href="#">테마의류</a>
+                        </li>
+                        <li>
+                          <a href="#">커플룩/패밀리룩</a>
+                        </li>
+                        <li>
+                          <a href="#">빅사이즈</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" role="button">유아패션</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">여아</a>
+                        </li>
+                        <li>
+                          <a href="#">남아</a>
+                        </li>
+                        <li>
+                          <a href="#">신생아</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button">
+                    <i class="icon-beauty"></i>뷰티
+                  </a>
+                  <ul class="depth2">
+                    <li class="right_link">
+                      <a href="#"><img src="./assets/img_2.jpg" alt="이벤트바로가기" /></a>
+                    </li>
+                    <li>
+                      <a href="#" role="button">뷰티1</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">뷰티1-1</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티1-2</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티1-3</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티1-4</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" role="button">뷰티2</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">뷰티2-1</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티2-2</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티2-3</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티2-4</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" role="button">뷰티3</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">뷰티3-1</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티3-2</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티3-3</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티3-4</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" role="button">뷰티4</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">뷰티4-1</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티4-2</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티4-3</a>
+                        </li>
+                        <li>
+                          <a href="#">뷰티4-4</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button">
+                    <i class="icon-baby"></i>출산/유아동
+                  </a>
+                  <ul class="depth2">
+                    <li class="right_link">
+                      <a href="#"><img src="./assets/img_3.png" alt="이벤트바로가기" /></a>
+                    </li>
+                    <li>
+                      <a href="#" role="button">출산/유아동1</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">출산/유아동1-1</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동1-2</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동1-3</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동1-4</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" role="button">출산/유아동2</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">출산/유아동2-1</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동2-2</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동2-3</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동2-4</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" role="button">출산/유아동3</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">출산/유아동3-1</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동3-2</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동3-3</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동3-4</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" role="button">출산/유아동4</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="#">출산/유아동4-1</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동4-2</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동4-3</a>
+                        </li>
+                        <li>
+                          <a href="#">출산/유아동4-4</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-foods"></i>식품</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-kitchenware"></i>주방용품</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-houseware"></i>생활용품</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-interior"></i>홈인테리어</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-appliances"></i>가전디지털</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-food"></i>스포츠/레저</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-sports"></i>자동차용품</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-book"></i>도서/음반/DVD</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-toy"></i>완구/취미</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-stationery"></i>문구/오피스</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-pet"></i>반려동물용품</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-foods"></i>헬스/건강식품</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-travel"></i>여행/티켓</a>
+                </li>
+                <li>
+                  <a href="#" class="depth1_list" role="button"><i class="icon-theme"></i>테마관</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="logo_area">
+            <h1 class="h1_logo">
+              <a href="https://www.coupang.com/">
+                <span>Coupang</span>
+              </a>
+            </h1>
+            <form action="#" method="get" class="search_box">
+              <div class="style-select">
+                <label for="search_items" class="sr-only">검색 카테고리 선택</label>
+                <select name="search_items" id="search_items">
+                  <option value="전체" selected>
+                    전체
+                  </option>
+                  <option value="여성패션">
+                    여성패션
+                  </option>
+                  <option value="남성패션">
+                    남성패션
+                  </option>
+                  <option value="남녀 공용 의류">
+                    남녀 공용 의류
+                  </option>
+                  <option value="유아동패션">
+                    유아동패션
+                  </option>
+                  <option value="뷰티">뷰티</option>
+                  <option value="출산/유아동">
+                    출산/유아동
+                  </option>
+                  <option value="식품">식품</option>
+                  <option value="주방용품">
+                    주방용품
+                  </option>
+                  <option value="생활용품">
+                    생활용품
+                  </option>
+                  <option value="홈인테리어">
+                    홈인테리어
+                  </option>
+                </select>
+              </div>
+              <input type="text" placeholder="찾고 싶은 상품을 검색해보세요!" name="search" />
+              <div class="btn">
+                <button class="voice">마이크</button>
+                <button class="search" type="submit">
+                  돋보기
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="myCoupang_area">
+            <div class="myCoupang">
+              <button class="btn_myCoupang">마이쿠팡</button>
+              <div class="inner_con">
+                <ul>
+                  <li><a href="#">주문목록</a></li>
+                  <li><a href="#">취소/반품</a></li>
+                  <li><a href="#">찜리스트</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cart">
+              <button class="btn_cart">
+                장바구니<span>0</span>
+              </button>
+              <div class="inner_con">
+                <p class="empty_cart_txt">
+                  장바구니에 담긴 상품이 없습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="gnb_menu">
+            <ul>
+              <li>
+                <a href="#"><img src="./assets/icon/icon-rocket.svg" alt="" />로켓배송</a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/icon/icon-fresh.svg" alt="" />로켓프레시
+                  <img src="./assets/icon/new.svg" alt="" /></a>
+              </li>
+              <li><a href="#">쿠팡비즈</a></li>
+              <li><a href="#">로켓직구</a></li>
+              <li><a href="#">골드박스</a></li>
+              <li><a href="#">와우회원할인</a></li>
+              <li><a href="#">이벤트/쿠폰</a></li>
+              <li><a href="#">착한상점</a></li>
+              <li><a href="#">기획전</a></li>
+              <li><a href="#">여행/티켓</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--//header_area-->
+      </div>
+    </header>
 
-    </div>
-  </header>
-
-  <nav class="navigation">
-    <!-- 내비게이션 영역 -->
-    <!-- 내비게이션 제목 -->
-
-    <div class="navigation__inner">
-      <!-- 카테고리별 내비게이션(메뉴) 영역 -->
-
-    </div>
-  </nav>
+    <footer class="footer">
+      <nav class="footer_nav">
+        <ul>
+          <li>
+            <a href="#">회사소개</a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li>
+            <a href="#">Investor Relations</a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li>
+            <a href="#">인재채용</a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li>
+            <a href="#">입점 / 제휴문의</a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li>
+            <a href="#">공지사항</a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li>
+            <a href="#">고객의 소리</a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li>
+            <a href="#">이용약관</a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li>
+            <a href="#"><strong>개인정보 처리방침</strong></a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li>
+            <a href="#">쿠팡페이 이용약관</a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li>
+            <a href="#"><strong>쿠팡페이 개인정보처리방침</strong></a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li>
+            <a href="#">신뢰관계센터</a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li>
+            <a href="#">제휴마케팅</a><span class="divider" aria-hidden="true">ㅣ</span>
+          </li>
+          <li><a href="#">광고안내</a></li>
+          <li>
+            <select name="GlobalSite" id="GlobalSite">
+              <option value="Global Site" selected>
+                Global Site
+              </option>
+              <option value="Global Site1">
+                Global Site1
+              </option>
+              <option value="Global Site2">
+                Global Site2
+              </option>
+              <option value="Global Site3">
+                Global Site3
+              </option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+      <div class="common_inner">
+        <div class="footer_info">
+          <h1><a href="#" class="sr-only">Coupang</a></h1>
+          <address>
+            상호명 및 호스팅 서비스 제공 : 쿠팡(주) <br />
+            대표이사 : 강한승,박대준 <br />
+            서울시 송파구 송파대로 570 <br />
+            사업자 등록번호 : 120-88-00767 <br />
+            통신판매업신고 : 2017-서울송파-0680 <br />
+            <a href="#">사업자정보 확인 &#62;</a>
+          </address>
+          <div class="contact_info">
+            <p>
+              <a href="tel:1577-7011">
+                <strong>365고객센터</strong> |
+                전자금융거래분쟁처리담당<br />
+                <span>1577-7011 (유료)</span>
+              </a>
+              <br />
+              서울시 송파구 송파대로 570 <br />
+              <a href="mailto:help@coupang.com">email : help@coupang.com</a>
+            </p>
+          </div>
+          <div class="safe_service">
+            <p>
+              <strong>우리은행 채무지급보증 안내</strong>
+              <br />
+              당사는 고객님이 현금 결제한 금액에 대해 <br />
+              우리은행과 채무지급보증 계약을 체결하여<br />
+              안전거래를 보장하고 있습니다. <br />
+              <a href="#">서비스 가입사실 확인 &#62;</a>
+            </p>
+          </div>
+        </div>
+        <div class="certification_list">
+          <ul>
+            <li class="cert1">
+              <span class="sr-only">인증범위 쿠팡서비스</span>
+            </li>
+            <li class="cert2">
+              <span class="sr-only">정보보안 국제표준</span>
+            </li>
+            <li class="cert3">
+              <span class="sr-only">개인정보보호 우수사이트</span>
+            </li>
+            <li class="cert4">
+              <span class="sr-only">위해상품차단 시스템 운영매장</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="common_inner">
+          <p>
+            사이버몰 내 판매되는 상품 중에는 쿠팡에 등록한 개별
+            판매자가 판매하는 마켓플레이스(오픈마켓) 상품이
+            포함되어 있습니다.<br />
+            마켓플레이스(오픈마켓) 상품의 경우 쿠팡은
+            통신판매중개자이며 통신판매의 당사자가 아닙니다.<br />
+            쿠팡은 마켓플레이스(오픈마켓) 상품, 거래정보 및 거래
+            등에 대하여 책임을 지지 않습니다.<br />
+            쿠팡은 소비자 보호와 안전거래를 위해
+            신뢰관리센터(CM112@coupang.com)를 운영하고 있으며,
+            관련 분쟁이 발생할 경우 별도의 분쟁 처리절차에 의거
+            분쟁이 처리됩니다. Copyright © Coupang Corp.
+            2010-2022 All Rights Reserved.
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img
+                  src="./assets/icon/sns-facebook.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://section.blog.naver.com/ " target="_blank" rel="noopener"><img
+                  src="./assets/icon/sns-naver-blog.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img
+                  src="./assets/icon/sns-instagram.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <main class="main">
     <!-- 메인 콘텐츠 영역 -->

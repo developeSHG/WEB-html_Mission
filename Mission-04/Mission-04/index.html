@@ -9,13 +9,137 @@
   <link rel="icon" href="/assets/favicon/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/stylesheets/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./stylesheets/main.css" />
   <script src="/js/main.js" defer></script>
 </head>
 
 <body>
-
+  <div class="container">
+    <header id="header">
+      <div class="header_bar">
+        <div class="common_inner">
+          <ul class="header_menu">
+            <li>
+              <ul>
+                <li><a href="#">쿠팡플레이</a></li>
+                <li><a href="#">제휴마케팅</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">고객센터</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--//header_bar-->
+      </div>
+      <div class="common_inner">
+        <div class="header_area">
+          <div class="header_category">
+            <button class="button--category">
+              <span>카테고리</span>
+            </button>
+          </div>
+          <div class="logo_area">
+            <h1 class="h1_logo">
+              <a href="https://www.coupang.com/">
+                <span>Coupang</span>
+              </a>
+            </h1>
+            <form action="#" method="get" class="search_box">
+              <div class="style-select">
+                <label for="search_items" class="sr-only">검색 카테고리 선택</label>
+                <select name="search_items" id="search_items">
+                  <option value="전체" selected>
+                    전체
+                  </option>
+                  <option value="여성패션">
+                    여성패션
+                  </option>
+                  <option value="남성패션">
+                    남성패션
+                  </option>
+                  <option value="남녀 공용 의류">
+                    남녀 공용 의류
+                  </option>
+                  <option value="유아동패션">
+                    유아동패션
+                  </option>
+                  <option value="뷰티">뷰티</option>
+                  <option value="출산/유아동">
+                    출산/유아동
+                  </option>
+                  <option value="식품">식품</option>
+                  <option value="주방용품">
+                    주방용품
+                  </option>
+                  <option value="생활용품">
+                    생활용품
+                  </option>
+                  <option value="홈인테리어">
+                    홈인테리어
+                  </option>
+                </select>
+              </div>
+              <input type="text" placeholder="찾고 싶은 상품을 검색해보세요!" name="search" />
+              <div class="btn">
+                <button class="voice">마이크</button>
+                <button class="search" type="submit">
+                  돋보기
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="myCoupang_area">
+            <div class="myCoupang">
+              <button class="btn_myCoupang">마이쿠팡</button>
+              <div class="inner_con">
+                <ul>
+                  <li><a href="#">주문목록</a></li>
+                  <li><a href="#">취소/반품</a></li>
+                  <li><a href="#">찜리스트</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cart">
+              <button class="btn_cart">
+                장바구니<span>0</span>
+              </button>
+              <div class="inner_con">
+                <p class="empty_cart_txt">
+                  장바구니에 담긴 상품이 없습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="gnb_menu">
+            <ul>
+              <li>
+                <a href="#"><img src="./assets/icon/icon-rocket.svg" alt="" />로켓배송</a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/icon/icon-fresh.svg" alt="" />로켓프레시
+                  <img src="./assets/icon/new.svg" alt="" /></a>
+              </li>
+              <li><a href="#">2022년 설날</a></li>
+              <li><a href="#">로켓직구</a></li>
+              <li><a href="#">골드박스</a></li>
+              <li><a href="#">정기배송</a></li>
+              <li><a href="#">이벤트/쿠폰</a></li>
+              <li><a href="#">기획전</a></li>
+              <li><a href="#">여행/티켓</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--//header_area-->
+      </div>
+    </header>
+  </div>
 </body>
 
 </html>
